@@ -35,7 +35,7 @@ app.get("/userdetails2", (req, res) => {
         timestamp: new Date().toISOString()
     }
     res.json(user2)
-})
+}) 
 app.get("/userdetails3", (req, res) => {
 
     let user3 = {
