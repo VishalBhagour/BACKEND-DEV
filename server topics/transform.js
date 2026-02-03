@@ -7,6 +7,7 @@ const upper = new Transform({
         cb(null, modifiedData)
     }
 })
+
 const removevowel = new Transform({
     transform(chunk, encouding, cb) {
         const modifiedData = chunk.toString().replace(/[AEIOU]/g, "*");
