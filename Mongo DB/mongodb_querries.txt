@@ -10,7 +10,7 @@ db.products.find({
 
 
 3. RAM = 8GB
-db.products.find({ speces: "8GB" })
+db.products.find({ 'specs.ram': "8GB" })
 
 
 4. Tag = "gaming"
