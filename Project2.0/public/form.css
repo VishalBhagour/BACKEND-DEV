@@ -1,0 +1,139 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background: #ffffff;
+    padding: 40px 60px;
+    border-radius: 20px;
+    /* More curve */
+    width: 650px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.form-container:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    color: #4e73df;
+    font-weight: 600;
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea,
+input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    /* curved input */
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #4e73df;
+    outline: none;
+    box-shadow: 0 0 8px rgba(78, 115, 223, 0.3);
+}
+
+textarea {
+    height: 90px;
+    resize: none;
+}
+
+.profile-images {
+    display: flex;
+    gap: 15px;
+    margin-top: 12px;
+}
+
+.profile-images label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.profile-images img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.profile-images input:checked+img {
+    border: 2px solid #1cc88a;
+}
+
+.gender,
+.department {
+    display: flex;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    /* curved buttons */
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cancel {
+    background-color: #e0e0e0;
+}
+
+.cancel:hover {
+    background-color: #c6c6c6;
+}
+
+.submit {
+    background-color: #4e73df;
+    color: white;
+}
+
+.submit:hover {
+    background-color: #2e59d9;
+}
+
+.reset {
+    background-color: #1cc88a;
+    color: white;
+}
+
+.reset:hover {
+    background-color: #17a673;
+}
